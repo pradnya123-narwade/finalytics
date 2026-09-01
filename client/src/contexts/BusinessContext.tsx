@@ -747,6 +747,10 @@ export function BusinessProvider({ children }: { children: React.ReactNode }) {
     setTransactions(initialTransactions);
     setReconciliationIssues(initialReconciliationIssues);
     setPhoneAlerts(initialPhoneAlerts);
+    setLastGeneratedReport(null);
+    setOfflineQueue([]);
+    setDraggedTx(null);
+    setIsDraggingDayBatch(false);
   }, []);
 
   // Derived metrics

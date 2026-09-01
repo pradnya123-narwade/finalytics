@@ -427,7 +427,15 @@ export default function WebCommandCenter() {
                 <Check size={13} /> Resolve Mismatches
               </button>
 
-              <button onClick={resetDemo} className="px-2 py-1 rounded bg-purple-900 text-purple-200 text-xs">
+              <button
+                onClick={() => {
+                  resetDemo();
+                  toast.success("State & Office Kit Batch Reset! 🔄", {
+                    description: "Daily ledger batch, generated report, and mismatch issues restored to initial state.",
+                  });
+                }}
+                className="px-2 py-1 rounded bg-purple-900 hover:bg-purple-800 text-purple-200 text-xs font-medium"
+              >
                 Reset State
               </button>
             </div>
