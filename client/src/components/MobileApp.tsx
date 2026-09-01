@@ -229,7 +229,7 @@ export default function MobileApp() {
                     value={entry}
                     onChange={(e) => setEntry(e.target.value)}
                     onKeyDown={(e) => e.key === "Enter" && handleSave()}
-                    placeholder="e.g. Ramesh 3 milk 180 UPI or Vidya 5 Register 450 cash"
+                    placeholder="e.g. Ramesh 3 books 180 UPI or Vidya 5 Register 450 cash"
                   />
                   <button onClick={() => handleSave()} aria-label="Save transaction">
                     <Plus size={18} />
